@@ -58,6 +58,11 @@ class MainViewController: UIViewController {
 
     private func setupViews() {
         view.backgroundColor = .cyan
+        let rightItem = UIBarButtonItem(image: UIImage(systemName: "pencil"), style: .plain, target: self, action: #selector(handleShowTriggerOptions))
+        navigationItem.rightBarButtonItem = rightItem
+        
+        // clock
+        // The view and the clock label
         view.addSubview(clockView)
         
         clockView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
@@ -83,6 +88,12 @@ class MainViewController: UIViewController {
         clock.stop()
     }
     
+    @objc func handleShowTriggerOptions() {
+        let viewModel = SpeechSelectViewModel(userConfig: viewModel.userConfig)
+        let vc = SpeechSelectViewController(viewModel: viewModel)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     deinit {
         #if DEBUG
         print("Main View Controller Deinit")
@@ -90,12 +101,4 @@ class MainViewController: UIViewController {
     }
 }
 
-class MainViewModel: NSObject {
-    
-    let userConfig: UserConfiguration
-    
-    init(userConfig: UserConfiguration) {
-        self.userConfig = userConfig
-        super.init()
-    }
-}
+

@@ -7,41 +7,6 @@
 
 import UIKit
 
-//class Clock {
-//    var displayLink: CADisplayLink?
-//    var onUpdate: ((String) -> Void)?
-//
-//    func start() {
-//        displayLink = CADisplayLink(target: self, selector: #selector(updateTime))
-//        displayLink?.preferredFramesPerSecond = 60
-//        displayLink?.add(to: .current, forMode: RunLoop.Mode.default)
-//        updateTime()
-//    }
-//
-//    func stop() {
-//        displayLink?.invalidate()
-//        displayLink = nil
-//    }
-//
-//    @objc func updateTime() {
-//        let currentTime = Date()
-//        let formattedTime = formatTime(currentTime)
-//        onUpdate?(formattedTime)
-//    }
-//
-//    func formatTime(_ time: Date) -> String {
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "HH:mm:ss.SSS"
-//        return formatter.string(from: time)
-//    }
-//
-//    deinit {
-//        #if DEBUG
-//        print("Clock deinit")
-//        #endif
-//    }
-//}
-
 class Clock {
     var displayLink: CADisplayLink?
     var onUpdate: ((String) -> Void)?
@@ -66,6 +31,12 @@ class Clock {
         textToSpeech?.stopSpeaking()
     }
     
+    func formatTime(_ time: Date, timeFormatOption: TimeFormatOption) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = timeFormatOption.dateFormat
+        return formatter.string(from: time)
+    }
+    
     @objc func updateTime() {
         let currentTime = Date()
         guard let tfo = timeFormatOption else { return }
@@ -81,12 +52,6 @@ class Clock {
         // Speak every minute
         let minuteText = "\(Calendar.current.component(.minute, from: currentTime)) minutes"
         textToSpeech?.speak(minuteText)
-    }
-    
-    func formatTime(_ time: Date, timeFormatOption: TimeFormatOption) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = timeFormatOption.dateFormat
-        return formatter.string(from: time)
     }
     
     deinit {

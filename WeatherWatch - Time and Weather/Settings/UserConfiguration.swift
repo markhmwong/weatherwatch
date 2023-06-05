@@ -47,15 +47,3 @@ class UserConfiguration: NSObject {
         return SpeechTrigger.init(rawValue: trigger) ?? .off
     }
 }
-
-// User can only select one setting
-enum SpeechTrigger: String, CaseIterable {
-    case off
-    case everyHour
-    case everyMinute
-    case everySecond
-    case every30Minutes
-    case every15Minutes
-    case every10Minutes
-    case every5Minutes
-}
