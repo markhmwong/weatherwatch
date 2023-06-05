@@ -20,8 +20,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         self.window = UIWindow(windowScene: windowScene)
         self.window?.windowScene = windowScene
-
-        self.window?.rootViewController = ViewController()
+        
+        let viewModel = MainViewModel(userConfig: UserConfiguration.shared)
+        self.window?.rootViewController = MainViewController(viewModel: viewModel)
         self.window?.makeKeyAndVisible()
         
         

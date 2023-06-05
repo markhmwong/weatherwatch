@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		4D8944572A2890B400FECF28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944562A2890B400FECF28 /* AppDelegate.swift */; };
 		4D8944592A2890B400FECF28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944582A2890B400FECF28 /* SceneDelegate.swift */; };
-		4D89445B2A2890B400FECF28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89445A2A2890B400FECF28 /* ViewController.swift */; };
+		4D89445B2A2890B400FECF28 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89445A2A2890B400FECF28 /* MainViewController.swift */; };
 		4D8944612A2890B400FECF28 /* WeatherWatch___Time_and_Weather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4D89445F2A2890B400FECF28 /* WeatherWatch___Time_and_Weather.xcdatamodeld */; };
 		4D8944632A2890B600FECF28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D8944622A2890B600FECF28 /* Assets.xcassets */; };
 		4D8944662A2890B600FECF28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D8944642A2890B600FECF28 /* LaunchScreen.storyboard */; };
 		4D8944712A2890B600FECF28 /* WeatherWatch___Time_and_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944702A2890B600FECF28 /* WeatherWatch___Time_and_WeatherTests.swift */; };
 		4D89447B2A2890B600FECF28 /* WeatherWatch___Time_and_WeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89447A2A2890B600FECF28 /* WeatherWatch___Time_and_WeatherUITests.swift */; };
 		4D89447D2A2890B600FECF28 /* WeatherWatch___Time_and_WeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89447C2A2890B600FECF28 /* WeatherWatch___Time_and_WeatherUITestsLaunchTests.swift */; };
+		4D89448A2A28C80500FECF28 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944892A28C80500FECF28 /* Clock.swift */; };
+		4D89448C2A28DB4C00FECF28 /* SpeechSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89448B2A28DB4C00FECF28 /* SpeechSynthesizer.swift */; };
+		4D89448F2A28DC0C00FECF28 /* SupportedLanagues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89448E2A28DC0C00FECF28 /* SupportedLanagues.swift */; };
+		4D8944922A2B3AD900FECF28 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4D8944912A2B3AD900FECF28 /* KeychainSwift */; };
+		4D8944942A2B3C4800FECF28 /* UserConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944932A2B3C4800FECF28 /* UserConfiguration.swift */; };
+		4D8944962A2B6DF100FECF28 /* TestUserConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944952A2B6DF100FECF28 /* TestUserConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,7 @@
 		4D8944532A2890B400FECF28 /* WeatherWatch - Time and Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeatherWatch - Time and Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8944562A2890B400FECF28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D8944582A2890B400FECF28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4D89445A2A2890B400FECF28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D89445A2A2890B400FECF28 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4D8944602A2890B400FECF28 /* WeatherWatch___Time_and_Weather.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "WeatherWatch___Time_and_Weather.xcdatamodel"; sourceTree = "<group>"; };
 		4D8944622A2890B600FECF28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D8944652A2890B600FECF28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +55,11 @@
 		4D8944762A2890B600FECF28 /* WeatherWatch - Time and WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WeatherWatch - Time and WeatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D89447A2A2890B600FECF28 /* WeatherWatch___Time_and_WeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherWatch___Time_and_WeatherUITests.swift"; sourceTree = "<group>"; };
 		4D89447C2A2890B600FECF28 /* WeatherWatch___Time_and_WeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherWatch___Time_and_WeatherUITestsLaunchTests.swift"; sourceTree = "<group>"; };
+		4D8944892A28C80500FECF28 /* Clock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
+		4D89448B2A28DB4C00FECF28 /* SpeechSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSynthesizer.swift; sourceTree = "<group>"; };
+		4D89448E2A28DC0C00FECF28 /* SupportedLanagues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportedLanagues.swift; sourceTree = "<group>"; };
+		4D8944932A2B3C4800FECF28 /* UserConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserConfiguration.swift; sourceTree = "<group>"; };
+		4D8944952A2B6DF100FECF28 /* TestUserConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUserConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8944922A2B3AD900FECF28 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,9 +111,12 @@
 		4D8944552A2890B400FECF28 /* WeatherWatch - Time and Weather */ = {
 			isa = PBXGroup;
 			children = (
+				4D89448D2A28DBEE00FECF28 /* Speech */,
 				4D8944562A2890B400FECF28 /* AppDelegate.swift */,
 				4D8944582A2890B400FECF28 /* SceneDelegate.swift */,
-				4D89445A2A2890B400FECF28 /* ViewController.swift */,
+				4D89445A2A2890B400FECF28 /* MainViewController.swift */,
+				4D8944932A2B3C4800FECF28 /* UserConfiguration.swift */,
+				4D8944892A28C80500FECF28 /* Clock.swift */,
 				4D8944622A2890B600FECF28 /* Assets.xcassets */,
 				4D8944642A2890B600FECF28 /* LaunchScreen.storyboard */,
 				4D8944672A2890B600FECF28 /* Info.plist */,
@@ -113,6 +128,7 @@
 		4D89446F2A2890B600FECF28 /* WeatherWatch - Time and WeatherTests */ = {
 			isa = PBXGroup;
 			children = (
+				4D8944952A2B6DF100FECF28 /* TestUserConfiguration.swift */,
 				4D8944702A2890B600FECF28 /* WeatherWatch___Time_and_WeatherTests.swift */,
 			);
 			path = "WeatherWatch - Time and WeatherTests";
@@ -125,6 +141,15 @@
 				4D89447C2A2890B600FECF28 /* WeatherWatch___Time_and_WeatherUITestsLaunchTests.swift */,
 			);
 			path = "WeatherWatch - Time and WeatherUITests";
+			sourceTree = "<group>";
+		};
+		4D89448D2A28DBEE00FECF28 /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+				4D89448B2A28DB4C00FECF28 /* SpeechSynthesizer.swift */,
+				4D89448E2A28DC0C00FECF28 /* SupportedLanagues.swift */,
+			);
+			path = Speech;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +168,9 @@
 			dependencies = (
 			);
 			name = "WeatherWatch - Time and Weather";
+			packageProductDependencies = (
+				4D8944912A2B3AD900FECF28 /* KeychainSwift */,
+			);
 			productName = "WeatherWatch - Time and Weather";
 			productReference = 4D8944532A2890B400FECF28 /* WeatherWatch - Time and Weather.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +243,9 @@
 				Base,
 			);
 			mainGroup = 4D89444A2A2890B300FECF28;
+			packageReferences = (
+				4D8944902A2B3AD900FECF28 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 4D8944542A2890B400FECF28 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +289,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D8944612A2890B400FECF28 /* WeatherWatch___Time_and_Weather.xcdatamodeld in Sources */,
-				4D89445B2A2890B400FECF28 /* ViewController.swift in Sources */,
+				4D8944942A2B3C4800FECF28 /* UserConfiguration.swift in Sources */,
+				4D89445B2A2890B400FECF28 /* MainViewController.swift in Sources */,
+				4D89448F2A28DC0C00FECF28 /* SupportedLanagues.swift in Sources */,
+				4D89448C2A28DB4C00FECF28 /* SpeechSynthesizer.swift in Sources */,
 				4D8944572A2890B400FECF28 /* AppDelegate.swift in Sources */,
 				4D8944592A2890B400FECF28 /* SceneDelegate.swift in Sources */,
+				4D89448A2A28C80500FECF28 /* Clock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D8944712A2890B600FECF28 /* WeatherWatch___Time_and_WeatherTests.swift in Sources */,
+				4D8944962A2B6DF100FECF28 /* TestUserConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,6 +628,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4D8944902A2B3AD900FECF28 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D8944912A2B3AD900FECF28 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4D8944902A2B3AD900FECF28 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4D89445F2A2890B400FECF28 /* WeatherWatch___Time_and_Weather.xcdatamodeld */ = {
