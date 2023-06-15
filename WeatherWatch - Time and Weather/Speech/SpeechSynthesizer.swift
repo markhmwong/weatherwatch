@@ -10,14 +10,16 @@ import AVFoundation
 
 class TextToSpeech {
     let synthesizer: AVSpeechSynthesizer
-    
-    init() {
+    private let userConfig: UserConfiguration
+    init(userConfig: UserConfiguration) {
+        self.userConfig = userConfig
         synthesizer = AVSpeechSynthesizer()
     }
     
     func speak(_ text: String, language: String = "en-US") {
         let utterance = AVSpeechUtterance(string: text)
-        utterance.voice = AVSpeechSynthesisVoice(language: language)
+        let l = self.userConfig.getLanguage()
+        utterance.voice = AVSpeechSynthesisVoice(language: l.rawValue)
         synthesizer.speak(utterance)
     }
         

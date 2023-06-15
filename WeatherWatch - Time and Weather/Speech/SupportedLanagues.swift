@@ -24,9 +24,9 @@ enum SupportedLanguage: String, CaseIterable {
         return locale.localizedString(forIdentifier: self.rawValue) ?? self.rawValue
     }
 
-    static var allCases: [SupportedLanguage] {
-        return AVSpeechSynthesisVoice.speechVoices().compactMap {
-            SupportedLanguage(rawValue: $0.language)
-        }
-    }
+//    static var allCases: [SupportedLanguage] {
+//        return AVSpeechSynthesisVoice.speechVoices().compactMap {
+//            SupportedLanguage(rawValue: $0.language)
+//        }
+//    }
 }

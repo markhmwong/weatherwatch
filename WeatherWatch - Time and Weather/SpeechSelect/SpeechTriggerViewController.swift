@@ -11,6 +11,8 @@ class SpeechSelectViewController: UITableViewController {
 
     let viewModel: SpeechSelectViewModel
 
+    private let cellReuseIdentifier: String = "TriggerCell"
+    
     init(viewModel: SpeechSelectViewModel) {
         self.viewModel = viewModel
         super.init(style: .insetGrouped)
@@ -22,6 +24,8 @@ class SpeechSelectViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: self.cellReuseIdentifier)
+
         tableView.reloadData()
     }
 
@@ -32,7 +36,7 @@ class SpeechSelectViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TriggerCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: self.cellReuseIdentifier, for: indexPath)
         let trigger = viewModel.trigger(forIndexPath: indexPath)
         cell.textLabel?.text = trigger.rawValue
         cell.accessoryType = viewModel.isSelectedTrigger(atIndexPath: indexPath) ? .checkmark : .none

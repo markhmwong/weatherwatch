@@ -27,6 +27,18 @@
 		4D89449D2A2D92D100FECF28 /* SpeechTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89449C2A2D92D100FECF28 /* SpeechTriggerViewController.swift */; };
 		4D8944A02A2DE93300FECF28 /* SpeechSelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89449F2A2DE93300FECF28 /* SpeechSelectViewModel.swift */; };
 		4D8944A22A2DEC9300FECF28 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944A12A2DEC9200FECF28 /* MainCoordinator.swift */; };
+		4D8944A42A31CA0400FECF28 /* TestClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944A32A31CA0400FECF28 /* TestClock.swift */; };
+		4D8944A62A33739B00FECF28 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944A52A33739B00FECF28 /* SettingsViewController.swift */; };
+		4D8944A82A3373C000FECF28 /* SettingsVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944A72A3373C000FECF28 /* SettingsVIewModel.swift */; };
+		4D8944AA2A3375C500FECF28 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944A92A3375C500FECF28 /* SettingsCoordinator.swift */; };
+		4D8944AD2A34AA1600FECF28 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944AC2A34AA1600FECF28 /* CoordinatorProtocol.swift */; };
+		4D8944B22A34DCB000FECF28 /* LanagueSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944B12A34DCB000FECF28 /* LanagueSelectViewController.swift */; };
+		4D8944B42A34DCB600FECF28 /* LanguageSelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944B32A34DCB600FECF28 /* LanguageSelectViewModel.swift */; };
+		4D8944B72A34E63F00FECF28 /* TimeFormatOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944B62A34E63F00FECF28 /* TimeFormatOption.swift */; };
+		4D8944BA2A34E6E300FECF28 /* TimeFormatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944B92A34E6E300FECF28 /* TimeFormatViewController.swift */; };
+		4D8944BC2A34E6ED00FECF28 /* TimeFormatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944BB2A34E6ED00FECF28 /* TimeFormatViewModel.swift */; };
+		4D8944BE2A36010A00FECF28 /* TimeFormatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944BD2A36010A00FECF28 /* TimeFormatCell.swift */; };
+		4D8944C02A36152D00FECF28 /* LanguageSelectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8944BF2A36152D00FECF28 /* LanguageSelectCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +82,20 @@
 		4D89449C2A2D92D100FECF28 /* SpeechTriggerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTriggerViewController.swift; sourceTree = "<group>"; };
 		4D89449F2A2DE93300FECF28 /* SpeechSelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechSelectViewModel.swift; sourceTree = "<group>"; };
 		4D8944A12A2DEC9200FECF28 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		4D8944A32A31CA0400FECF28 /* TestClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestClock.swift; sourceTree = "<group>"; };
+		4D8944A52A33739B00FECF28 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4D8944A72A3373C000FECF28 /* SettingsVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVIewModel.swift; sourceTree = "<group>"; };
+		4D8944A92A3375C500FECF28 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		4D8944AC2A34AA1600FECF28 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		4D8944B12A34DCB000FECF28 /* LanagueSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanagueSelectViewController.swift; sourceTree = "<group>"; };
+		4D8944B32A34DCB600FECF28 /* LanguageSelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectViewModel.swift; sourceTree = "<group>"; };
+		4D8944B62A34E63F00FECF28 /* TimeFormatOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatOption.swift; sourceTree = "<group>"; };
+		4D8944B92A34E6E300FECF28 /* TimeFormatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatViewController.swift; sourceTree = "<group>"; };
+		4D8944BB2A34E6ED00FECF28 /* TimeFormatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatViewModel.swift; sourceTree = "<group>"; };
+		4D8944BD2A36010A00FECF28 /* TimeFormatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatCell.swift; sourceTree = "<group>"; };
+		4D8944BF2A36152D00FECF28 /* LanguageSelectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSelectCell.swift; sourceTree = "<group>"; };
+		4D8944C12A3831D000FECF28 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4D8944C32A3A0C6400FECF28 /* WeatherWatch - Time and Weather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WeatherWatch - Time and Weather.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,19 +147,25 @@
 		4D8944552A2890B400FECF28 /* WeatherWatch - Time and Weather */ = {
 			isa = PBXGroup;
 			children = (
+				4D8944C32A3A0C6400FECF28 /* WeatherWatch - Time and Weather.entitlements */,
+				4D8944C22A38A31200FECF28 /* Weather */,
+				4D8944B82A34E6D200FECF28 /* TimeFormatSelect */,
+				4D8944B52A34E62500FECF28 /* Clock */,
+				4D8944B02A34DC9F00FECF28 /* LanguageSelect */,
+				4D8944AE2A34CAF100FECF28 /* Tip */,
+				4D8944AB2A34A98C00FECF28 /* Coordinator */,
 				4D89449E2A2DE91600FECF28 /* SpeechSelect */,
-				4D8944892A28C80500FECF28 /* Clock.swift */,
 				4D8944992A2D858E00FECF28 /* Settings */,
 				4D89448D2A28DBEE00FECF28 /* Speech */,
 				4D8944562A2890B400FECF28 /* AppDelegate.swift */,
 				4D8944582A2890B400FECF28 /* SceneDelegate.swift */,
 				4D89445A2A2890B400FECF28 /* MainViewController.swift */,
+				4D8944C12A3831D000FECF28 /* README.md */,
 				4D8944972A2D853B00FECF28 /* MainViewModel.swift */,
 				4D8944622A2890B600FECF28 /* Assets.xcassets */,
 				4D8944642A2890B600FECF28 /* LaunchScreen.storyboard */,
 				4D8944672A2890B600FECF28 /* Info.plist */,
 				4D89445F2A2890B400FECF28 /* WeatherWatch___Time_and_Weather.xcdatamodeld */,
-				4D8944A12A2DEC9200FECF28 /* MainCoordinator.swift */,
 			);
 			path = "WeatherWatch - Time and Weather";
 			sourceTree = "<group>";
@@ -143,6 +175,7 @@
 			children = (
 				4D8944952A2B6DF100FECF28 /* TestUserConfiguration.swift */,
 				4D8944702A2890B600FECF28 /* WeatherWatch___Time_and_WeatherTests.swift */,
+				4D8944A32A31CA0400FECF28 /* TestClock.swift */,
 			);
 			path = "WeatherWatch - Time and WeatherTests";
 			sourceTree = "<group>";
@@ -159,8 +192,8 @@
 		4D89448D2A28DBEE00FECF28 /* Speech */ = {
 			isa = PBXGroup;
 			children = (
-				4D89448B2A28DB4C00FECF28 /* SpeechSynthesizer.swift */,
 				4D89448E2A28DC0C00FECF28 /* SupportedLanagues.swift */,
+				4D89448B2A28DB4C00FECF28 /* SpeechSynthesizer.swift */,
 			);
 			path = Speech;
 			sourceTree = "<group>";
@@ -170,6 +203,8 @@
 			children = (
 				4D8944932A2B3C4800FECF28 /* UserConfiguration.swift */,
 				4D89449A2A2D864E00FECF28 /* SpeechTrigger.swift */,
+				4D8944A52A33739B00FECF28 /* SettingsViewController.swift */,
+				4D8944A72A3373C000FECF28 /* SettingsVIewModel.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -181,6 +216,59 @@
 				4D89449F2A2DE93300FECF28 /* SpeechSelectViewModel.swift */,
 			);
 			path = SpeechSelect;
+			sourceTree = "<group>";
+		};
+		4D8944AB2A34A98C00FECF28 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				4D8944A12A2DEC9200FECF28 /* MainCoordinator.swift */,
+				4D8944A92A3375C500FECF28 /* SettingsCoordinator.swift */,
+				4D8944AC2A34AA1600FECF28 /* CoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		4D8944AE2A34CAF100FECF28 /* Tip */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tip;
+			sourceTree = "<group>";
+		};
+		4D8944B02A34DC9F00FECF28 /* LanguageSelect */ = {
+			isa = PBXGroup;
+			children = (
+				4D8944B12A34DCB000FECF28 /* LanagueSelectViewController.swift */,
+				4D8944B32A34DCB600FECF28 /* LanguageSelectViewModel.swift */,
+				4D8944BF2A36152D00FECF28 /* LanguageSelectCell.swift */,
+			);
+			path = LanguageSelect;
+			sourceTree = "<group>";
+		};
+		4D8944B52A34E62500FECF28 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				4D8944892A28C80500FECF28 /* Clock.swift */,
+				4D8944B62A34E63F00FECF28 /* TimeFormatOption.swift */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
+		4D8944B82A34E6D200FECF28 /* TimeFormatSelect */ = {
+			isa = PBXGroup;
+			children = (
+				4D8944B92A34E6E300FECF28 /* TimeFormatViewController.swift */,
+				4D8944BB2A34E6ED00FECF28 /* TimeFormatViewModel.swift */,
+				4D8944BD2A36010A00FECF28 /* TimeFormatCell.swift */,
+			);
+			path = TimeFormatSelect;
+			sourceTree = "<group>";
+		};
+		4D8944C22A38A31200FECF28 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Weather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,15 +407,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8944B22A34DCB000FECF28 /* LanagueSelectViewController.swift in Sources */,
+				4D8944B42A34DCB600FECF28 /* LanguageSelectViewModel.swift in Sources */,
 				4D8944612A2890B400FECF28 /* WeatherWatch___Time_and_Weather.xcdatamodeld in Sources */,
 				4D8944942A2B3C4800FECF28 /* UserConfiguration.swift in Sources */,
 				4D89445B2A2890B400FECF28 /* MainViewController.swift in Sources */,
 				4D89448F2A28DC0C00FECF28 /* SupportedLanagues.swift in Sources */,
+				4D8944A82A3373C000FECF28 /* SettingsVIewModel.swift in Sources */,
+				4D8944C02A36152D00FECF28 /* LanguageSelectCell.swift in Sources */,
+				4D8944BE2A36010A00FECF28 /* TimeFormatCell.swift in Sources */,
 				4D89449D2A2D92D100FECF28 /* SpeechTriggerViewController.swift in Sources */,
 				4D89448C2A28DB4C00FECF28 /* SpeechSynthesizer.swift in Sources */,
 				4D8944572A2890B400FECF28 /* AppDelegate.swift in Sources */,
+				4D8944B72A34E63F00FECF28 /* TimeFormatOption.swift in Sources */,
 				4D8944592A2890B400FECF28 /* SceneDelegate.swift in Sources */,
+				4D8944BA2A34E6E300FECF28 /* TimeFormatViewController.swift in Sources */,
+				4D8944AA2A3375C500FECF28 /* SettingsCoordinator.swift in Sources */,
+				4D8944BC2A34E6ED00FECF28 /* TimeFormatViewModel.swift in Sources */,
 				4D89448A2A28C80500FECF28 /* Clock.swift in Sources */,
+				4D8944AD2A34AA1600FECF28 /* CoordinatorProtocol.swift in Sources */,
+				4D8944A62A33739B00FECF28 /* SettingsViewController.swift in Sources */,
 				4D8944982A2D853B00FECF28 /* MainViewModel.swift in Sources */,
 				4D8944A22A2DEC9300FECF28 /* MainCoordinator.swift in Sources */,
 				4D8944A02A2DE93300FECF28 /* SpeechSelectViewModel.swift in Sources */,
@@ -340,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D8944712A2890B600FECF28 /* WeatherWatch___Time_and_WeatherTests.swift in Sources */,
+				4D8944A42A31CA0400FECF28 /* TestClock.swift in Sources */,
 				4D8944962A2B6DF100FECF28 /* TestUserConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,11 +599,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WeatherWatch - Time and Weather/WeatherWatch - Time and Weather.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GEKZN86RYS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WeatherWatch - Time and Weather/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow to get location weather data";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -526,11 +628,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WeatherWatch - Time and Weather/WeatherWatch - Time and Weather.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GEKZN86RYS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "WeatherWatch - Time and Weather/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow to get location weather data";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

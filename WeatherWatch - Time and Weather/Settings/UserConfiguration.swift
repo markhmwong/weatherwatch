@@ -12,6 +12,8 @@ class UserConfiguration: NSObject {
     
     enum ConfigurationKeys: String, CaseIterable {
         case speechTrigger
+        case timeFormat
+        case language
     }
     
     let keychain: KeychainSwift = KeychainSwift()
@@ -24,15 +26,22 @@ class UserConfiguration: NSObject {
     }
     
     private func initConfigurationKeysToDefaults() {
-        let ck = ConfigurationKeys.speechTrigger.rawValue
-        if self.keychain.get(ck) == nil {
-            self.keychain.set("off", forKey: ck)
-        }
+        resetToDefaults()
     }
     
     func resetToDefaults() {
+        defaultSpeechTrigger()
+        defaultTimeFormat()
+    }
+    
+    private func defaultSpeechTrigger() {
         let ck = ConfigurationKeys.speechTrigger.rawValue
         keychain.set("off", forKey: ck)
+    }
+    
+    private func defaultTimeFormat() {
+        let tf = ConfigurationKeys.timeFormat.rawValue
+        self.keychain.set(TimeFormatOption.hourMinuteSecond.rawValue, forKey: tf)
     }
     
     func updateSpeechTrigger(speechTrigger: SpeechTrigger) {
@@ -45,5 +54,26 @@ class UserConfiguration: NSObject {
         }
         
         return SpeechTrigger.init(rawValue: trigger) ?? .off
+    }
+    
+    func updateTimeFormat(tf: TimeFormatOption) {
+        keychain.set(tf.rawValue, forKey: ConfigurationKeys.timeFormat.rawValue)
+    }
+    
+    func getTimeFormat() -> TimeFormatOption {
+        guard let timeFormat = keychain.get(ConfigurationKeys.timeFormat.rawValue) else {
+            return TimeFormatOption.hourMinuteSecond
+        }
+        
+        return TimeFormatOption.init(rawValue: timeFormat) ?? .hourMinuteSecond
+    }
+    
+    func getLanguage() -> SupportedLanguage {
+        let l = keychain.get(ConfigurationKeys.language.rawValue) ?? SupportedLanguage.englishUS.rawValue
+        return SupportedLanguage(rawValue: l) ?? .englishUS
+    }
+    
+    func updateLanguage(language: SupportedLanguage) {
+        keychain.set(language.rawValue, forKey: ConfigurationKeys.language.rawValue)
     }
 }
